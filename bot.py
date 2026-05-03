@@ -163,6 +163,9 @@ async def leaderboard(ctx: commands.Context):
     await ctx.send("**Photo Streak Leaderboard**\n" + "\n".join(lines))
 
 
+print("DISCORD_TOKEN exists:", bool(TOKEN))
+print("DISCORD_TOKEN length:", len(TOKEN))
+
 if not TOKEN:
     raise RuntimeError("DISCORD_TOKEN is missing.")
 
