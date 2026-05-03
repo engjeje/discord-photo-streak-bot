@@ -165,6 +165,7 @@ async def leaderboard(ctx: commands.Context):
 
 print("DISCORD_TOKEN exists:", bool(TOKEN))
 print("DISCORD_TOKEN length:", len(TOKEN))
+print("TEST_VAR:", os.getenv("TEST_VAR"))
 
 if not TOKEN:
     raise RuntimeError("DISCORD_TOKEN is missing.")
